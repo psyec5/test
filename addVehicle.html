@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Add a Vehicle</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="add-Vehicle.js" type="module"></script>
+    </head>
+
+    <!-- The main website -->
+    <body>
+        
+        <!-- div contains main, side and footer -->
+        <div class="container" id = "container">
+
+        <!-- Nav bar containing title and links to other pages -->
+        <header class="header">
+            <h1>Add a Vehicle</h1>
+
+            <nav>
+               <ul class="navbar">
+                  <li><a href="peopleSearch.html">People Search</a></li>
+                  <li><a href="vehicleSearch.html">Vehicle Search</a></li>
+                  <li><span>add a Vehicle</span></li>
+               </ul>
+            </nav>
+         </header>
+
+            <div class="main">
+            <main class="main-search">
+               <h2>Add Vehicle</h2>
+      
+               <!-- Search bars -->
+               <div class ="search">
+                <p>Rego: <input id = "rego" class="rego" placeholder="Enter.." type ="text"></p>
+                <p>Make: <input id="make" class="make" placeholder="Enter.." type="text"></p>
+                <p>Model: <input id="model" class="model" placeholder="Enter.." type="text"></p>
+                <p>Colour: <input id="colour" class="colour" placeholder="Enter.." type="text"></p>
+                <p>Owner: <input id="owner" class="owner" placeholder="Enter.." type="text"></p>
+
+                <button id = "button1" type = "button" class="button"><b>Add vehicle</b> </button> 
+
+                <div class="add-owner">
+
+                    <p7><b>Owner not found - Please add owner below:</b></p7>
+                    <p>Person ID: <input id = "personid" class="personid1" placeholder="Enter.." type ="text"></p>
+                    <p>Name: <input id="name" class="name1" placeholder="Enter.." type="text"></p>
+                    <p>Address: <input id="address" class="address1" placeholder="Enter.." type="text"></p>
+                    <p>DOB: <input id="dob" class="dob1" placeholder="Enter.." type="text"></p>
+                    <p>License: <input id="license" class="license1" placeholder="Enter.." type="text"></p>
+                    <p>Expire: <input id="expire" class="expire1" placeholder="Enter.." type="text"></p>
+
+                    <button id = "buttonAdd" type = "button" class="addButton"><b>Add owner</b> </button> 
+
+                </div>
+
+                <div id ="message">
+                    <p1><b>Vehicle added successfully</b></p1>
+                    <p2><b>Error</b></p2>
+                </div>
+                
+
+               </div>      
+            </main>
+            </div>
+            
+            <!-- Side containing Person icon image -->
+            <div class="side">
+                <aside class="main-component">
+                    <div class ="text_container">
+                    <p>Enter user <b>details</b> in search bar</p>
+                    </div>
+                    <div class="image-container">
+                        <img class="sidebar-image" src="Person.png" alt="PersonIcon" width="250" height="213">
+                    </div>
+                </aside>
+            </div>
+            
+
+            <div class="footer">
+            <footer class="main-component">
+                <p> This website was created by Ebrima Ceesay Jr</p>
+
+                <p><b>1004 - Corsework</b></p> 
+             </footer>
+            </div>
+
+         </div>
+
+
+    </body>
+    
+</html>
