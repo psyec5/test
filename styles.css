@@ -1,0 +1,418 @@
+/*Setting the background colour to dark grey*/
+body {
+    background-color: #2f2e2e;
+ }
+ 
+ /*establishing the main elements*/
+ .main-component {
+    background-color: rgb(183, 187, 183);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+ }
+
+ .main-search {
+    background-color: rgb(183, 187, 183);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+ }
+
+
+ .header {
+    background-color: rgb(183, 187, 183);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 1.5rem;
+    text-align: center;
+
+ }
+
+ /* Center items horizontally */
+ .main-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; 
+
+}
+
+/*Results elemets*/
+.results{
+    background-color: rgb(28, 26, 26);
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    height: 450px;
+    overflow-y: auto;
+}
+
+/*Centre main search horizonatlly*/
+.main-search {
+    display: flex;
+    flex-direction: column;
+    align-items: left; 
+}
+
+ /*Setting the navigation links horizontally*/
+ .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  li {
+    margin: 0 100px;
+  }
+
+  /*Grid layout*/
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    grid-template-rows: minmax(100px, auto);
+    
+  }
+
+  .header {
+    grid-column: 1 / 5;
+    grid-row: 1;
+    padding: 10px;
+  }
+  .main {
+    grid-column: 2 / 5;
+    grid-row: 2 / 5;
+    height:910px;
+    background-color: rgb(183, 187, 183);
+    border-radius: 5px;
+  }
+  .side {
+    grid-column: 1;
+    grid-row: 2 / 6;
+    background-color: rgb(183, 187, 183);
+    height:910px;
+    border-radius: 5px;
+  }
+  .footer {
+    grid-column: 1 / 5;
+    grid-row: 5;
+  }
+
+  /*Changing font*/
+p{
+    font-family:monospace;
+    font-size: 20px;
+}
+
+h1{
+    font-family:monospace;
+    font-size: 50px;
+}
+p1{
+    color: greenyellow;
+}
+
+p2{
+    color: red;
+}
+
+p3{
+    color: red;
+}
+
+p5{
+    color:greenyellow;
+}
+p6{
+    color: red;
+}
+
+p7{
+  font-family:monospace;
+  font-size: 20px;
+  color: red;
+}
+
+h2{font-family:monospace}
+li{font-family:monospace}
+
+/*condition to display successful search*/
+#message p1 {
+    display: none;
+  }
+
+#message p2 {
+    display: none;
+  }
+
+#message p3 {
+    display: none;
+  }
+
+#message p4 {
+    display: none;
+  }
+
+#message p5 {
+    display: none;
+  }
+
+#message p6 {
+    display: none;
+  }
+
+/*Editing and styling search button*/
+.button{
+    background-color:rgb(42, 40, 40);
+    color: white;
+    border: whitesmoke;
+    text-align: center;
+    border-style: outset;
+    height: 50px;
+    width: 1000px;
+    font-family:sans-serif bold;
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+
+.button:hover{
+    background-color: #2f2e2e;
+}
+
+.button:active{
+    background-color: black;
+    color: grey;
+}
+
+/*Styling search bar*/
+.name{
+
+    border: 1px solid black;
+    border-radius: 100px;
+    height: 20px;
+    width: 50%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+.name:hover, .name:focus {
+    border: 1.5px solid #000000;
+  }
+
+  .license:hover, .license:focus {
+    border: 1.5px solid #000000;
+  }
+
+
+.license{
+
+    border: 1px solid black;
+    border-radius: 100px;
+    height: 20px;
+    width: 50%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/*Screen size less than 500px*/
+@media only screen and (max-width:500px){
+
+    /*reducing font size*/
+    li {
+        font-size: 20px;
+        margin: 0 50px;
+    
+    }
+
+    /*Stacking navigation links*/
+    .navbar {
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+      }
+      
+      /*resizing sidebar image*/
+      .sidebar-image{
+        width:75px;
+        height: 75px;
+      }
+
+      /*results section reduced*/
+      .results{
+        height: 400px;
+      }
+
+      /*Reducing overall font size*/
+      .p{
+        font-size: 15px;
+      }
+
+      /*Decreasing width of submit button*/
+      .button{
+        width: 430px;
+      }
+
+      /*hiding additional text*/
+      .text_container{
+        display: none;
+      }
+
+ /*Modifying gridlayout for 500px width*/
+ .page-layout-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    grid-template-rows: minmax(100px, auto);
+    
+  }
+
+  .header {
+    grid-column: 1 / 5;
+    grid-row: 1;
+    h1{text-align: center;}
+    text-align: left;
+  }
+  .main {
+    grid-column: 1 / 5;
+    grid-row: 2 / 5;
+    height:900px;
+    background-color: rgb(183, 187, 183);
+    border-radius: 5px;
+  }
+  .side {
+    grid-column: 1;
+    grid-row: 5;
+    background-color: rgb(183, 187, 183);
+    height:200px;
+    width: 100px;
+    border-radius: 5px;
+    
+    
+  }
+  .footer {
+    grid-column: 2 / 5;
+    grid-row: 5;
+    height: 75px;
+  }
+
+}
+
+/*Designing the results container*/
+.results-square {
+    background-color: lightgrey;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    color:black;
+    font-size: 15px;
+    width: 200px;
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+.results-property {
+    margin-bottom: 0px;
+}
+
+.Results-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Serach bars for add vehicle*/
+.rego, .make, .model, .colour, .owner{
+
+  border: 1px solid black;
+  border-radius: 100px;
+  height: 20px;
+  width: 50%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.rego:hover, .rego:focus, .make:hover, .make:focus {
+  border: 1.5px solid #000000;
+}
+
+.model:hover, .model:focus, .colour:hover, .colour:focus {
+  border: 1.5px solid #000000;
+}
+
+.owner:hover, .owner:focus {
+  border: 1.5px solid #000000;
+}
+
+/*container for add vehicle*/
+.add-owner{
+  background-color: rgb(136, 136, 136);
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  height: 490px;
+  overflow-y: auto;
+}
+
+.add-owner{
+  display: none;
+}
+
+/*Serach bars for add owener*/
+.personid1, .name1, .address1, .license1, .expire1, .dob1{
+
+  border: 1px solid black;
+  border-radius: 100px;
+  height: 20px;
+  width: 50%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.personid1:hover, .personid1:focus, .name1:hover, .name1:focus,.dob1:hover, .dob1:focus  {
+  border: 1.5px solid #000000;
+}
+
+.address1:hover, .address1:focus, .license1:hover, .license1:focus {
+  border: 1.5px solid #000000;
+}
+
+.expire1:hover, .expire1:focus {
+  border: 1.5px solid #000000;
+}
+
+/*button to add owner*/
+.addButton{
+  background-color:rgb(42, 40, 40);
+  color: white;
+  border: whitesmoke;
+  text-align: center;
+  border-style: outset;
+  height: 50px;
+  width: 950px;
+  font-family:sans-serif bold;
+  font-size: 20px;
+  transition: transform 0.3s;
+}
+
+.addButton:hover{
+  background-color: #2f2e2e;
+}
+
+.addButton:active{
+  background-color: black;
+  color: grey;
+}
